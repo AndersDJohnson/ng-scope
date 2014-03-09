@@ -1,9 +1,11 @@
 ng-scope
 ========
 
-Angular directive for extending scope with expression value.
+Angular directive for extending scope.
 
-Allows augmenting scope with transient primitives.
+- Modifying scope properties.
+- Defining aliases for scope values.
+- Augmenting scope with transient primitives, e.g. for `ng-include`.
 
 ## Install
 
@@ -33,4 +35,12 @@ Then include `ng-scope.js` in your page.
   <!-- parent scope is also accessible -->
 </script>
 <div ng-scope="{name: 'Anders', job: 'developer'}" ng-include src="'template'"></div>
+```
+
+### Aliasing
+
+```html
+<div ng-scope="{name: fullName}">
+  <!-- whatever you want here -->
+</div>
 ```
