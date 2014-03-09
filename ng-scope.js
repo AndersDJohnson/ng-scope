@@ -44,7 +44,9 @@
    * @restrict A
    *
    * @description
-   * Directive that sets up an inheriting child scope and extends with evaluated value of attribute.
+   * Directive that sets up an inheriting child scope,
+   *  and extends with evaluated value of attribute,
+   *  as well as subcribing to updates on that expression.
    */
   app.directive('ngScope', [
     function () {
@@ -52,8 +54,17 @@
         restrict: 'A', // attribute 'ng-scope'
         scope: true, // extend parent scope
         link: function (scope, element, attrs) {
-          // extend the scope with the evaluated attribute
-          angular.extend(scope, scope.$eval(attrs.ngScope));
+          // get the expression from the attribute
+          var expression = attrs.ngScope;
+          // evaulate the attribute
+          var evaluated = scope.$eval(expression);
+          // extend scope with evaluated expression
+          angular.extend(scope, evaluated);
+          // watch for changes on the expression
+          scope.$watch(expression, function (newValue, oldValue, scope) {
+            // update extending scope with the new value of the expression
+            angular.extend(scope, newValue);
+          });
         }
       };
     }
