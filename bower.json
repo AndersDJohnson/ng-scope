@@ -5,9 +5,29 @@
   "homepage": "https://github.com/adjohnson916/ng-scope",
   "description": "Angular directive for extending scope.",
   "keywords": [
+    "ngScope",
     "angular",
+    "angularjs",
+    "angular-js",
     "angular.js",
-    "angular-directive"
+    "angular-module",
+    "angular-directive",
+    "angular-directives",
+    "directive",
+    "directives",
+    "angular-scope",
+    "angular-scopes",
+    "scope",
+    "scopes",
+    "angular-include",
+    "angular-includes",
+    "include",
+    "includes",
+    "alias",
+    "aliases",
+    "ng-scope",
+    "ng-include",
+    "ngmodules"
   ],
   "authors": [
     "Anders D. Johnson"
