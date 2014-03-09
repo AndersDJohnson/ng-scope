@@ -19,7 +19,7 @@ Then include `ng-scope.js` in your page.
 
 ### Wrapping
 
-```js
+```html
 <div ng-scope="{name: 'Anders', job: 'developer'}">
   <!-- whatever you want here -->
   <!-- parent scope is also accessible -->
@@ -27,7 +27,7 @@ Then include `ng-scope.js` in your page.
 ```
 ### ng-include
 
-```js
+```html
 <script type="text/ng-template" id="template">
   Hi, my name is {{name}}, and I work as a {{job}}!
   <!-- parent scope is also accessible -->
