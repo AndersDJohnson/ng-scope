@@ -23,7 +23,7 @@
      <doc:example>
        <doc:source>
           <div ng-scope="{name: 'Anders', job: 'developer'}">
-              <!-- whatever you want here -->
+            <!-- whatever you want here -->
           </div>
        </doc:source>
      </doc:example>
@@ -44,7 +44,7 @@
    * @restrict A
    *
    * @description
-   * Directive that sets up an inheriting child scope and extends with provided value.
+   * Directive that sets up an inheriting child scope and extends with evaluated value of attribute.
    */
   app.directive('ngScope', [
     function () {
