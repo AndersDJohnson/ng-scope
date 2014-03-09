@@ -3,7 +3,7 @@
   "main": "ng-scope.js",
   "version": "0.1.0",
   "homepage": "https://github.com/adjohnson916/ng-scope",
-  "description": "Angular directive for extending scope with expression value.",
+  "description": "Angular directive for extending scope.",
   "keywords": [
     "angular",
     "angular.js",
