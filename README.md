@@ -7,6 +7,8 @@ Angular directive for extending scope.
 - Defining aliases for scope values.
 - Augmenting scope with transient primitives, e.g. for `ng-include`.
 
+Also [available at ngModules.org](http://ngmodules.org/modules/ng-scope).
+
 ## Install
 
 Via Bower:
