@@ -19,6 +19,12 @@ $ bower install --save ng-scope
 
 Then include `ng-scope.js` in your page.
 
+And add it as a dependency of your module, e.g.:
+
+```js
+var myApp = angular.module('myApp', ['ngScope']);
+```
+
 ## Examples
 
 ### Wrapping
