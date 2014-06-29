@@ -40,7 +40,7 @@ var myApp = angular.module('myApp', ['ngScope']);
 
 #### Scope inheritance
 
-With {{ng-include}}, we can pass the current scope with `this`:
+With `ng-include`, we can pass the current scope with `this`:
 
 ```html
 <div ng-scope="this" ng-include src="'template'"></div>
