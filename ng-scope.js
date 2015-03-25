@@ -64,7 +64,7 @@
           scope.$watch(expression, function (newValue, oldValue, scope) {
             // update extending scope with the new value of the expression
             angular.extend(scope, newValue);
-          });
+          }, true);
         }
       };
     }
