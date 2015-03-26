@@ -1,0 +1,30 @@
+<html>
+  <head>
+
+  </head>
+  <body ng-app="app">
+
+    <div ng-controller="TestController">
+      {{rootName}}
+
+      <div ng-scope="{name: 'Anders', job: 'developer'}">
+        {{name}} ({{job}})
+      </div>
+
+      <div ng-scope="this">
+        {{rootName}}
+      </div>
+
+      <div ng-scope="{name: 'Anders 2', job: 'developer 2'}" ng-include src="'template'"></div>
+    </div>
+
+    <script type="text/ng-template" id="template">
+      Hi, my name is {{name}}, and I work as a {{job}}!
+      <!-- parent scope is also accessible -->
+    </script>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../ng-scope.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
