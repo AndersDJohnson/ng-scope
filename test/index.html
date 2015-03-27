@@ -15,6 +15,15 @@
         {{rootName}}
       </div>
 
+      <div>i: {{i}}</div>
+
+      <div ng-scope="{j: i + 1}">
+        j: {{j}} {{rootName}}
+      </div>
+
+      <button ng-click="incr()">incr</button>
+
+
       <div ng-scope="{name: 'Anders 2', job: 'developer 2'}" ng-include src="'template'"></div>
     </div>
 
